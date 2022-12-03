@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Basic Knowledges
+{% endblock %}
+
+{% block styles %}
+{% static 'css/style_math.css' %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="content_empty"></div>
+        <div class="content_theme">
+            <div class="content_item">
+                <div class="item_icon">
+                    <a href="/" class="icon_link">
+                        <img src="/media/svg/math_arrow.svg" alt="return back">
+                    </a>
+                </div>
+                <div class="item_math">Basic Knowledges </div>
+            </div>    
+        </div>
+        <div class="content_descrip">
+            <div class="content_descrip-block">
+                QuizLand is essential for everyone; at least 
+                the basic level is a must. But it's not a cup 
+                of tea for many. We have got you this basic general 
+                knowledge test quiz, so find out just how smart you 
+                are with this quiz. Do you know as much as everyone 
+                else does? The quiz contains pretty general questions, 
+                not too easy but not hard either. Just try to score as 
+                much as you can, and we'll see how well you score in the 
+                end.
+            </div>
+        </div>
+        <div class="content_coolsvg">
+            <div class="coolsvg_polosa">
+                <img src="/img/svg/polosa_basic.svg" alt="Polosa" class="polosa">
+                <div class="coolsvg_polosa-text"><div class="teeext">Quizzes</div></div>
+            </div>
+            <div class="coolsvg_last">
+                Choose one and pass! <br>
+                Good luck!</div>
+        </div>
+
+        <div class="content_quizzes">
+            <ul>
+                <li class="quizzes_levels">Basic Knowledge quizzes by age
+                    <div class="levels">
+                        <ul>
+                            <li><a href="" class="quiz_hover">Year 6 General Knowledge Quiz Questions And Answers</a></li>
+                            <li><a href="" class="quiz_hover">Basic General Knowledge Test Quiz</a></li>
+                            <li><a href="" class="quiz_hover">General Knowledge Quiz For 12-Year-Olds</a></li> 
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+{% endblock %}

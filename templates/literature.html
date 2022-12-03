@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Literature
+{% endblock %}
+
+{% block styles %}
+{% static 'css/style_math.css' %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="content_empty"></div>
+        <div class="content_theme">
+            <div class="content_item">
+                <div class="item_icon">
+                    <a href="/literature" class="icon_link">
+                        <img src="/media/svg/math_arrow.svg" alt="return back">
+                    </a>
+                </div>
+                <div class="item_math">Literature</div>
+            </div>    
+        </div>
+        <div class="content_descrip">
+            <div class="content_descrip-block">
+                <div class="descrip_text">One of the 
+                    basic reasons why reading is important is that it helps 
+                    you grow mentally, emotionally, and psychologically. Every 
+                    book provides you an opportunity to learn and explore new 
+                    ideas. Reading books increases your knowledge and makes you smarter.<br> 
+                    Stories can transport us into other worlds. If you're a 
+                    'bookworm', test your knowledge in these fun and interesting quizzes!
+                </div>
+            </div>
+        </div>
+        <div class="content_coolsvg">
+            <div class="coolsvg_polosa">
+                <img src="/media/svg/polosa_lit.svg" alt="Polosa" class="polosa">
+                <div class="coolsvg_polosa-text">Quizzes</div>
+            </div>
+            <div class="coolsvg_last">
+                Choose one and pass! <br>
+                Good luck!</div>
+        </div>
+
+        <div class="content_quizzes">
+            <ul>
+                <li class="quizzes_levels">Authors
+                    <div class="levels">
+                        <ul>
+                            <li><a href="" class="quiz_hover">- Agatha Christie</a></li>
+                            <li><a href="" class="quiz_hover">- Charlotte Bronte</a></li>
+                            <li><a href="" class="quiz_hover">- Ernest Hemingway</a></li>
+                            <li><a href="" class="quiz_hover">- George Orwell</a></li>
+                            <li><a href="" class="quiz_hover">- Jane Austen</a></li>
+                            <li><a href="" class="quiz_hover">- Lewis Carroll</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="quizzes_levels">Fictional characters
+                    <div class="levels">
+                        <ul>
+                            <li><a href="" class="quiz_hover">- Fictional Characters 1</a></li>
+                            <li><a href="" class="quiz_hover">- Fictional Characters 2</a></li>
+                            <li><a href="" class="quiz_hover">- Fictional Characters 3</a></li>
+                            <li><a href="" class="quiz_hover">- Fictional Characters 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+{% endblock %}

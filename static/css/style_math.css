@@ -1,0 +1,217 @@
+/*
+HTML5 Doctor Reset v1.6.1
+http://html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+ul li{list-style: none;}
+
+/* START */
+
+
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+
+/*   CONTENT STARTS    */
+
+body {
+    font-family: 'Bellota Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    background-color: #EBF0FF;
+}
+.content {
+    max-width: 1300px;
+    min-height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.content_empty{
+    height: 140px;
+    border-bottom: 2px solid #8690A9;
+}
+.content_theme{
+    height: 121px;
+    border-bottom: 2px solid #8690A9;
+}
+
+.content_item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.item_math{
+    margin: 0 500px 7px 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    text-transform: uppercase;
+    color: #3D505A;
+}
+.item_icon{
+    margin-top: 30px;
+    margin-left: 22px;
+}
+
+
+.content_descrip{
+    max-width: 1092px;
+    height: 250px;
+    margin: 60px auto;
+}
+.descrip_text{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.content_coolsvg{
+    max-width: 1300px;
+    padding-left: 103px;
+    margin-top: -60px;
+    padding-top: 40px;
+    border-top: 2px solid #8690A9;
+}
+
+.coolsvg_polosa{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.coolsvg_polosa-text{
+    margin: 7px -600px;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+}
+.coolsvg_last{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #2B3166;
+    margin: 30px 100px 60px 0;
+}
+
+.content_quizzes{
+    margin-left: 144px;
+}
+.quizzes_levels:before{
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: #8E99F8;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.levels{
+    margin: 26px 0 40px 60px;
+}
+.quiz_hover{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #47445A;
+}
+.levels li{
+    margin-bottom: 20px;
+}
+.levels li:hover{
+    font-size: 30px;
+    text-shadow: 0px 0px 10px rgba(21, 0, 104, 0.25);
+}

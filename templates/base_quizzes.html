@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{{ Quiz_items.title }}
+{% endblock %}
+
+{% block styles %}
+{% static 'css/base_quizzes_style.css' %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="full_quiz_site">
+            <div class="empty_container"></div>
+            <div class="quiz_category">
+                <a href="/" class="back_icon_link">
+                    <img src="media/svg/math_arrow.svg" alt="back to main" class="back_link">
+                </a>
+                <h2 class="category_name">{{ Quiz_items.title }}</h2>
+            </div>
+            <div class="quiz_description">
+                <div class="text_description">
+                    {{ Quiz_items.description }}
+                </div>
+            </div>
+            <div class="quiz_entry">
+                <div class="quiz_entry_wrapper">
+                    <img src="media/svg/polosa_scince.svg" alt="poloska">
+                    <div class="quiz_luck">
+                        Choose one and pass!
+                        Good luck!
+                    </div>
+                </div>
+            </div>
+            <div class="quizzes_block">
+                <ul class="topic">
+                    <li class="pre_topics"><p>Grade 1</p>
+                        <ul class="levels">
+                            <li><a href="#" class="level_link">easy</a></li>
+                            <li><a href="#" class="level_link">hard</a></li>
+                        </ul>
+                    </li>
+                    <li class="pre_topics"><p>Grade 2</p>
+                        <ul class="levels">
+                            <li><a href="#" class="level_link">easy</a></li>
+                            <li><a href="#" class="level_link">hard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

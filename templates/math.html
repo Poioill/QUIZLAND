@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Mathematics
+{% endblock %}
+
+{% block styles %}
+{% static 'css/base_quiz_styles.css' %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="full_quiz_site">
+            <div class="empty_container"></div>
+            <div class="quiz_category">
+                <a href="/" class="back_icon_link">
+                    <img src="/img/svg/math_arrow.svg" alt="back to main" class="back_link">
+                </a>
+                <h2 class="category_name">Science and technology</h2>
+            </div>
+            <div class="quiz_description">
+                <div class="text_description">
+                    One of the basic reasons why reading is important is that it helps you grow mentally, emotionally, and psychologically. Every book provides you an opportunity to learn and explore new ideas. Reading books increases your knowledge and makes you smarter.
+Stories can transport us into other worlds. If you're a 'bookworm', test your knowledge in these fun and interesting quizzes!
+                </div>
+            </div>
+            <div class="quiz_entry">
+                <div class="quiz_entry_wrapper">
+                    <img src="/img/svg/polosa_scince.svg" alt="poloska">
+                    <div class="quiz_luck">
+                        Choose one and pass!
+                        Good luck!
+                    </div>
+                </div>
+            </div>
+            <div class="quizzes_block">
+                <ul class="topic">
+                    <li class="pre_topics"><p>Grade 1</p>
+                        <ul class="levels">
+                            <li><a href="#" class="level_link">easy</a></li>
+                            <li><a href="#" class="level_link">hard</a></li>
+                        </ul>
+                    </li>
+                    <li class="pre_topics"><p>Grade 2</p>
+                        <ul class="levels">
+                            <li><a href="#" class="level_link">easy</a></li>
+                            <li><a href="#" class="level_link">hard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--
+
+
+<div class="content">
+    <div class="content_theme">
+        <div class="content_item">
+            <div class="item_icon">
+                <a href="#catalog" class="icon_link">
+                    <img src="media/svg/math_arrow.svg" alt="return back">
+                </a>
+            </div>
+            <div class="item_math">Mathematics</div>
+        </div>
+    </div>
+    <div class="content_descrip">
+        <div class="content_descrip-block">
+            <div class="descrip_text">It may seem that math problems
+                have no real application in life, this is not so close
+                to the truth! Mathematics is incredibly important in our
+                lives, and without realising it, we use mathematical
+                concepts every day, as well as the skills we learn
+                from solving mathematical problems. The laws of
+                mathematics govern everything around us, and without
+                a good understanding of them one can face significant
+                difficulties in life. <br>
+                QUIZLAND provides numerous collections of math quizzes
+                for you to boost your knowledge!
+            </div>
+        </div>
+    </div>
+    <div class="content_coolsvg">
+        <div class="coolsvg_coolest">
+            <img src="/media/svg/math-illustration.svg" alt="math is interesting" class="coolest">
+        </div>
+        <div class="coolsvg_polosa">
+            <img src="/media/svg/polosa.svg" alt="Polosa" class="polosa">
+            <div class="coolsvg_polosa-text">
+                <div class="teeext">Quizzes</div>
+            </div>
+        </div>
+        <div class="coolsvg_last">
+            Choose one and pass! <br>
+            Good luck!
+        </div>
+    </div>
+
+    <div class="content_quizzes">
+        <ul>
+            <li class="quizzes_levels">Math quiz level - Easy
+                <div class="levels">
+                    <ul>
+                        <li><a href="" class="quiz_hover">Quiz №1</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №2</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №3</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №4</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №5</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №6</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="quizzes_levels">Math quiz level - Middle
+                <div class="levels">
+                    <ul>
+                        <li><a href="" class="quiz_hover">Quiz №7</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №8</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №9</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №10</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №11</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №12</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="quizzes_levels">Math quiz level - Hard
+                <div class="levels">
+                    <ul>
+                        <li><a href="/" class="quiz_hover">Quiz №13</a></li>
+                        <li><a href="/" class="quiz_hover">Quiz №14</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №15</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №16</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №17</a></li>
+                        <li><a href="" class="quiz_hover">Quiz №18</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>-->
+{% endblock %}

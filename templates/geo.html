@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Science
+{% endblock %}
+
+{% block styles %}
+{% static 'css/style_math.css' %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="content_empty"></div>
+        <div class="content_theme">
+            <div class="content_item">
+                <div class="item_icon">
+                    <a href="/" class="icon_link">
+                        <img src="/media/svg/math_arrow.svg" alt="return back">
+                    </a>
+                </div>
+                <div class="item_math">Geography</div>
+            </div>    
+        </div>
+        <div class="content_descrip">
+            <div class="content_descrip-block">
+                Looking for a geography quiz? We 
+                have hundreds of free practice questions 
+                to help you with your geography review. 
+                These quizzes cover World Geography, Human 
+                Geography, Maps, and Capitals. Choose a topic 
+                from the list below to get started on your test 
+                prep right now!
+            </div>
+        </div>
+        <div class="content_coolsvg">
+            <div class="coolsvg_polosa">
+                <img src="/media/svg/polosa_geo.svg" alt="Polosa" class="polosa">
+                <div class="coolsvg_polosa-text"><div class="teeext">Quizzes</div></div>
+            </div>
+            <div class="coolsvg_last">
+                Choose one and pass! <br>
+                Good luck!</div>
+        </div>
+
+        <div class="content_quizzes">
+            <ul>
+                <li class="quizzes_levels">Geography quizzes
+                    <div class="levels">
+                        <ul>
+                            <li><a href="" class="quiz_hover">Countries of the World Quiz</a></li>
+                            <li><a href="" class="quiz_hover">Countries by First Two Letters in 90 Seconds</a></li>
+                            <li><a href="" class="quiz_hover">Europe Map Quiz</a></li> 
+                            <li><a href="" class="quiz_hover">World Capitals Quiz</a></li> 
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+{% endblock %}

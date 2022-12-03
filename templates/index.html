@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+QUZLAND
+{% endblock %}
+
+{% block styles %}
+{% static 'css/styles.css' %}
+{% endblock %}
+
+{% block content %}
+    <img src="media/images/mainpic.jpg" alt="thinking  kid" width="1726px" class="mainimg">
+    <div class="main_info">
+        <div class="main_info_text">
+            <div class="main_title">
+                <h1>Quizzes for students</h1>
+            </div>
+            <div class="main_it">
+            Equity-Oriented Evaluation and Practice Improvement!
+            Boost student confidence (and scores!)
+            with comprehensive assessment and practice.Ensure
+            alignment and access to resources for all teachers
+            </div>
+        </div>
+        <div class="main_button">
+            <a href="#" class="button-link"><p>Start the quiz!</p></a>
+        </div>
+    </div>
+    <div class="main_question">
+        <hr class="hrs">
+        <ol class="ques">
+            <li>How do quizzes help in studying?</li>
+            <li>What is Quizland?</li>
+            <li>Who can pass the Quiz?</li>
+            <li>How can you prepare for our Quizzes?</li>
+            <li>What is the system of evalutation?</li>
+            <li>How are the Quizzes held?</li>
+        </ol>
+        <hr class="hrs">
+    </div>
+    <div class="question_answers">
+        <div class="question_ablocks">
+            {% for answer in answers %}
+            <div class="que_{{ answer.id }}">
+                <div class="qu_title2"><h2>{{ answer.title }}</h2></div>
+                <img src="{{ answer.image.url }}" alt="" class="q1_img" width="500px">
+                <div class="qu_text">{{ answer.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <a name="catalog"></a>
+    <br><br>
+    <div class="categories_block">
+        <div class="quizzes_entry">
+            <p class="entry">Quizland quizzes</p>
+        </div>
+        <div class="blocks_wrapper">
+            <p class="justtext">This section contains various topics and
+                rubrics for intellectual and entertaining pastime. Choose your
+                favourite subject and improve your erudition in your favourite
+                areas.</p>
+            <br>
+            {% for quiz in quizlinks %}
+            {% if quiz.id == 1 or quiz.id == 3 or quiz.id == 5 %}
+            <div class="category_odd">
+                <div class="odd_pic">
+                    <a name="literature"></a>
+                    <a href="{% url quiz.name %}" class="pic_link">
+                        <div class="pic_name">{{ quiz.item }}</div>
+                        <img src="{{ quiz.image.url }}" alt="pic" class="img_pic">
+                    </a>
+                </div>
+                <div class="odd_text">
+                    <div class="text_gradient">
+                        {{ quiz.description }}
+                    </div>
+                    <div class="quiz_button">
+                        <a href="{% url quiz.name %}" class="quiz_link">
+                            <p class="button_link">Choose the level and pass</p>
+                            <img src="media/svg/arrow_2.svg" alt="" class="icon_link">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="category_odd">
+                <div class="odd_text">
+                    <div class="text_gradient">
+                        {{ quiz.description }}
+                    </div>
+                    <div class="quiz_button">
+                        <a href="{% url quiz.name %}" class="quiz_link">
+                            <p class="button_link">Choose the level and pass</p>
+                            <img src="media/svg/arrow_2.svg" alt="" class="icon_link">
+                        </a>
+                    </div>
+                </div>
+                <div class="odd_pic">
+                    <a href="{% url quiz.name %}" class="pic_link">
+                        <div class="pic_name">{{ quiz.item }}</div>
+                        <img src="{{ quiz.image.url }}" alt="" class="img_pic">
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
